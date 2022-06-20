@@ -1,0 +1,43 @@
+<html>
+<body>
+<div class="container">
+    <hr>
+    <h1>Task Rest API</h1>
+    <hr>
+
+    <form action="http://localhost:5000/api/tasks" method="POST">
+	
+</div>
+        
+        <div class="form-group" ">
+            <label for="Title">Task Name:</label>
+            <!--<input class="form-control" name="title1" style="display:none">-->
+			<input type="text" id="title" name="tasktoadd">
+			<!--Other fields-->
+        <!--<button type="submit" class="btn btn-primary" ">Add Task</button> -->
+		<button type="submit" class="btn btn-primary" name="TaskSelection" value="AddTask" formaction="/add">Add Task</button>
+		
+			<br>
+		
+		<label for="Title">Task Name:</label>
+            <!--<input class="form-control" name="title">-->
+			<input type="text" id="title1" name="tasktodelete">
+			<button type="submit" class="btn btn-primary" name="TaskSelection" value="DelTask" formaction="/delete" >Delete Task</button>
+			<!--Other fields-- formaction="/delete">
+        <!--<button type="submit" class="btn btn-primary" ">Delete Task</button>-->
+		
+		<br>
+		
+		<label for="Title">Task Name:</label>
+            <!--<input class="form-control" name="title">-->
+			<input type="text" id="title" name="tasktoget">
+			<button type="submit" class="btn btn-primary" name="TaskSelection" value="GetTask" formaction="/get" >Get Task</button>
+			<br>
+        </div>
+
+        
+    </form>
+	
+</div>
+</body>
+</html>
